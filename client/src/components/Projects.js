@@ -11,8 +11,6 @@ function Projects() {
 
         <div className="project-card">
 
-    
-
           <div className="project-content">
             <h3>Quiz Application</h3>
 
@@ -23,17 +21,28 @@ function Projects() {
             </p>
 
             <div className="project-buttons">
-              <a href="https://github.com/Ankushi1/quiz-app" target="_blank">Code</a>
-              <a href="https://ankushi1.github.io/quiz-app/" target="_blank">Live</a>
-            </div>
-          </div>
+              <a 
+                href="https://github.com/Ankushi1/quiz-app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code
+              </a>
 
+              <a 
+                href="https://ankushi1.github.io/quiz-app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live
+              </a>
+            </div>
+
+          </div>
         </div>
 
 
         <div className="project-card">
-
-        
 
           <div className="project-content">
             <h3>E-Commerce Website</h3>
@@ -44,10 +53,16 @@ function Projects() {
             </p>
 
             <div className="project-buttons">
-              <a href="https://github.com/Ankushi1" target="_blank">Code</a>
+              <a 
+                href="https://github.com/Ankushi1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code
+              </a>
             </div>
-          </div>
 
+          </div>
         </div>
 
       </div>
