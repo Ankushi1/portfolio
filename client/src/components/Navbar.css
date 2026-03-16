@@ -1,0 +1,106 @@
+/* NAVBAR CONTAINER */
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+z-index:1000;
+box-sizing:border-box;
+}
+
+/* LOGO */
+
+.logo{
+font-size:22px;
+font-weight:bold;
+background:linear-gradient(90deg,#a855f7,#ec4899);
+-webkit-background-clip:text;
+background-clip:text;
+color:transparent;
+white-space:nowrap;
+}
+
+/* MENU */
+
+.menu{
+list-style:none;
+display:flex;
+gap:25px;
+margin:0;
+padding:0;
+}
+
+/* LINKS */
+
+.menu a{
+color:#cbd5e1;
+text-decoration:none;
+font-size:15px;
+position:relative;
+transition:0.3s;
+}
+
+/* HOVER */
+
+.menu a:hover{
+color:white;
+}
+
+/* UNDERLINE EFFECT */
+
+.menu a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-5px;
+width:0;
+height:2px;
+background:#a855f7;
+transition:0.3s;
+}
+
+.menu a:hover::after{
+width:100%;
+}
+
+/* hamburger hidden on desktop */
+
+.hamburger{
+display:none;
+font-size:26px;
+color:white;
+cursor:pointer;
+}
+
+/* mobile design */
+
+@media(max-width:768px){
+
+.menu{
+position:absolute;
+top:70px;
+right:0;
+background:black;
+flex-direction:column;
+width:200px;
+padding:20px;
+gap:20px;
+display:none;
+}
+
+.menu.active{
+display:flex;
+}
+
+.hamburger{
+display:block;
+}
+
+}

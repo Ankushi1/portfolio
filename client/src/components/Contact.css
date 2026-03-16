@@ -1,0 +1,50 @@
+.contact{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:#000;
+color:white;
+padding:40px 20px;
+}
+
+/* title */
+
+.contact-title{
+font-size:42px;
+margin-bottom:15px;
+
+background:linear-gradient(90deg,#a855f7,#ec4899);
+-webkit-background-clip:text;
+background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+/* description */
+
+.contact-text{
+max-width:550px;
+color:#9ca3af;
+line-height:1.6;
+margin-bottom:40px;
+}
+
+/* icons */
+
+.contact-icons{
+display:flex;
+gap:40px;
+font-size:34px;
+}
+
+.contact-icons a{
+color:#cbd5e1;
+transition:0.3s;
+}
+
+.contact-icons a:hover{
+color:#a855f7;
+transform:scale(1.2);
+}
